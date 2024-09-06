@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/wrapper";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -10,6 +11,9 @@ export function Hero() {
             <h1>TAMIONWEB</h1>
             <p>hello world</p>
             <Button>call me</Button>
+            <Button asChild>
+              <Link href="/about">About</Link>
+            </Button>
           </div>
         </div>
       </Container>
