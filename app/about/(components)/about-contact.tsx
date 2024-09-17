@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { FaPaperPlane } from "react-icons/fa6";
 
 export default function AboutContact() {
   const toMyEmail = () => {
@@ -49,6 +50,7 @@ export default function AboutContact() {
           />
         </form>
         <Button onClick={toMyEmail} size={"lg"} className="">
+          <FaPaperPlane className="mr-2" />
           Send
         </Button>
       </motion.section>

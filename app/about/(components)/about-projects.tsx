@@ -39,7 +39,7 @@ export default function AboutProjects() {
   return (
     <div
       id="projects"
-      className="scroll-mt-16 py-12 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-secondary/0 to-primary/15"
+      className="scroll-mt-16 py-12 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-secondary/0 to-primary/5"
     >
       <div className="container">
         <div className="min-h-screen px-3">
@@ -66,7 +66,7 @@ export default function AboutProjects() {
               ))}
             </div>
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-8">
             {filteredProjectsList.map((item, i) => (
               <Card key={i} className="group relative bg-primary/5 flex flex-col overflow-hidden">
                 <div className="translate-y-full scale-x-0 group-hover:translate-y-0 group-hover:scale-x-100 transition absolute inset-0 top-3/4 z-10 flex items-center justify-center">

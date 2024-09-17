@@ -21,7 +21,7 @@ export default function AboutHero() {
   const yOpacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
-    <section className="py-24">
+    <section className="py-28">
       <div className="container">
         <motion.div style={{ opacity: yOpacity }} className="flex items-center justify-center">
           <div className="flex flex-col space-y-4 items-center text-center justify-center">
