@@ -3,17 +3,21 @@
 import { useHome } from "@/hooks/use-home";
 import React from "react";
 
-export const Container = ({ children }: { children: React.ReactNode }) => {
-  return <div className="max-w-6xl mx-auto h-full">{children}</div>;
-};
-
 export const MainClient = ({ children }: { children: React.ReactNode }) => {
+  const [isMounted, setIsMounted] = React.useState(false);
   const { nav, closeNav } = useHome();
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  if (!isMounted) return null;
+
   const onClick = () => {
     if (nav) closeNav();
   };
+
   return (
-    <main onClick={onClick} className="grow">
+    <main onClick={onClick} className="grow mt-16 relative">
       {children}
     </main>
   );

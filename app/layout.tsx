@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MainClient } from "@/components/wrapper";
 import Header from "@/components/home/header";
 import Footer from "@/components/home/footer";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { MainClient } from "@/components/main-client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +24,15 @@ export default function RootLayout({
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <Header />
-        <MainClient>{children}</MainClient>
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Header />
+          <MainClient>
+            <div className="absolute size-64 rounded-full left-12 sm:left-28 top-8 bg-blue-600/10 blur-2xl" />
+            <div className="absolute size-48 rounded-full right-12 sm:right-24 top-72 bg-blue-600/15 blur-3xl" />
+            {children}
+          </MainClient>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
