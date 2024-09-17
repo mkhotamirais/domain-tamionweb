@@ -36,7 +36,7 @@ export default function AboutExperience() {
                 visible
                 className="text-gray-900 dark:text-white"
                 contentStyle={{
-                  background: "hsl(var(--primary))",
+                  background: "hsl(var(--primary-foreground))",
                   boxShadow: "none",
                   border: "1px solid rgba(0,0,0,0.05)",
                 }}

@@ -57,15 +57,15 @@ export default function AboutHero() {
             >
               <div className="flex flex-col sm:flex-row gap-2">
                 <a title="cv mkhotami" href="/CV-KHOTAMI-RAIS.pdf">
-                  <Button size="lg" className="rounded-full w-48">
-                    <FileDown className="size-5 mr-2" />
+                  <Button size="lg" className="w-44">
+                    <FileDown className="mr-1" />
                     <div>Download CV</div>
                   </Button>
                 </a>
                 <div>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button size="lg" className="w-48 rounded-full" variant={"outline"}>
+                      <Button size="lg" className="w-44" variant={"outline"}>
                         About Me
                       </Button>
                     </DialogTrigger>

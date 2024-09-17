@@ -22,7 +22,7 @@ export default function AboutContact() {
         <h1 className="text-3xl font-bold text-center mb-12 text-primary">Contact</h1>
         <p className="text-center -mt-3">
           You may reach me directly via email at{" "}
-          <a href="mailto:tami01.job@gmail.com" className="underline">
+          <a href="mailto:tami01.job@gmail.com" className="underline text-primary">
             tami01.job@gmail.com
           </a>{" "}
           or through the contact form provided below.
@@ -48,7 +48,7 @@ export default function AboutContact() {
             className="h-52 my-3 bg-inherit rounded-lg border border-black/10 dark:border-white/50 p-4"
           />
         </form>
-        <Button onClick={toMyEmail} size={"lg"} className="rounded-full">
+        <Button onClick={toMyEmail} size={"lg"} className="">
           Send
         </Button>
       </motion.section>

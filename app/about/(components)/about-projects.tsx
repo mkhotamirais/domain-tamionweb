@@ -70,7 +70,7 @@ export default function AboutProjects() {
             {filteredProjectsList.map((item, i) => (
               <Card key={i} className="group relative bg-primary/5 flex flex-col overflow-hidden">
                 <div className="translate-y-full scale-x-0 group-hover:translate-y-0 group-hover:scale-x-100 transition absolute inset-0 top-3/4 z-10 flex items-center justify-center">
-                  <Button asChild className="rounded-full px-8 backdrop-blur bg-black/15">
+                  <Button asChild className="px-8 backdrop-blur bg-black/15">
                     <Link href={item.href || "#"} replace>
                       Visit
                     </Link>
@@ -90,7 +90,7 @@ export default function AboutProjects() {
               </Card>
             ))}
           </div>
-          {pathname === "/all-projects" && filteredProjectsList.length === 0 && (
+          {pathname === "/projects" && filteredProjectsList.length === 0 && (
             <div className="flex justify-center items-center flex-col gap-2 italic text-xl mt-12">
               <div>No Result</div>
               <Button
@@ -99,7 +99,7 @@ export default function AboutProjects() {
                   setSelectedBadge([]);
                 }}
                 type="button"
-                className="rounded-full"
+                className=""
               >
                 Reset
               </Button>
@@ -107,7 +107,7 @@ export default function AboutProjects() {
           )}
           {path1 !== "projects" && (
             <div className="flex justify-center">
-              <Button asChild className="rounded-full" size={"lg"}>
+              <Button asChild className="" size={"lg"}>
                 <Link href="/projects">All Projects</Link>
               </Button>
             </div>

@@ -39,7 +39,7 @@ export default function DesktopNav() {
             </Link>
           ))}
         </div>
-        <Button variant={"outline"}>
+        <Button asChild variant={"outline"}>
           <Link href="/about#contact">Contact Us</Link>
         </Button>
         <ModeToggle />
