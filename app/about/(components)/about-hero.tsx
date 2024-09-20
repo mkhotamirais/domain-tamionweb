@@ -21,7 +21,7 @@ export default function AboutHero() {
   const yOpacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
-    <section className="py-28">
+    <section className="py-20">
       <div className="container">
         <motion.div style={{ opacity: yOpacity }} className="flex items-center justify-center">
           <div className="flex flex-col space-y-4 items-center text-center justify-center">
@@ -56,12 +56,18 @@ export default function AboutHero() {
               className="flex flex-col items-center gap-2 justify-center"
             >
               <div className="flex flex-col sm:flex-row gap-2">
-                <a title="cv mkhotami" href="/CV-KHOTAMI-RAIS.pdf">
+                <Link
+                  title="cv mkhotami"
+                  href="https://docs.google.com/document/d/18R2NTNaj5GlKRRw_xSlzLVVWltXp4V6p3-f9dNR8aHY/preview"
+                  // href="https://docs.google.com/document/d/18R2NTNaj5GlKRRw_xSlzLVVWltXp4V6p3-f9dNR8aHY/export?format=pdf"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
+                >
                   <Button size="lg" className="w-44">
                     <FileDown className="mr-1" />
                     <div>Download CV</div>
                   </Button>
-                </a>
+                </Link>
                 <div>
                   <Dialog>
                     <DialogTrigger asChild>

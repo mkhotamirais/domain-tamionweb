@@ -14,9 +14,12 @@ export function Hero() {
           <p className="text-center">
             Reliable Website Development Services, Customized to Meet Your Specific Needs and Goals.
           </p>
-          <div className="flex gap-4 mt-4">
-            <Button asChild size={"lg"}>
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+            <Button asChild size={"lg"} className="w-32">
               <Link href="/projects">Our Projects</Link>
+            </Button>
+            <Button asChild size={"lg"} variant={"outline"} className="w-32">
+              <Link href="/about">About Us</Link>
             </Button>
           </div>
         </div>
