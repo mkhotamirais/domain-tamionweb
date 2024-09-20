@@ -60,8 +60,8 @@ export default function AboutHero() {
                   title="cv mkhotami"
                   href="https://docs.google.com/document/d/18R2NTNaj5GlKRRw_xSlzLVVWltXp4V6p3-f9dNR8aHY/preview"
                   // href="https://docs.google.com/document/d/18R2NTNaj5GlKRRw_xSlzLVVWltXp4V6p3-f9dNR8aHY/export?format=pdf"
-                  // target="_blank"
-                  // rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Button size="lg" className="w-44">
                     <FileDown className="mr-1" />
