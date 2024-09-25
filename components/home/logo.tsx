@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
       <div className="flex items-center text-lg font-bold">
         <span>TAMI</span>
         <span>
-          <LogoSvg size="20" />
+          <LogoSvg size="18" />
         </span>
         <span>NWEB</span>
       </div>

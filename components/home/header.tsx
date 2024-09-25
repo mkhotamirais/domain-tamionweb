@@ -1,7 +1,8 @@
 "use client";
 
+import DesktopNav from "./desktop-nav";
 import { Logo } from "./logo";
-import DesktopNav, { MobileNav } from "./navbar";
+import MobileNav from "./mobile-nav";
 
 export default function Header() {
   return (

@@ -1,54 +1,14 @@
-"use client";
-
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { usePathname } from "next/navigation";
+import React from "react";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import { Menu } from "lucide-react";
+import { Logo } from "./logo";
+import { navMenu } from "@/lib/navbar-menu";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { ModeToggle } from "../mode-toggle";
-import { Logo } from "./logo";
-import { Menu } from "lucide-react";
-import { usePathname } from "next/navigation";
 
-const navMenu = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-];
-
-export default function DesktopNav() {
-  const pathname = usePathname();
-  const path1 = pathname.split("/")[1];
-  return (
-    <div className="hidden md:block">
-      <nav className="flex items-center gap-6">
-        <div className="flex items-center gap-6 text-sm">
-          {navMenu.map((item, i) => (
-            <Link
-              key={i}
-              href={item.href}
-              className={`${path1 === item.href.split("/")[1] ? "text-blue-600" : ""} hover:text-blue-500`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-        <Button asChild variant={"outline"}>
-          <Link href="/about#contact">Contact Us</Link>
-        </Button>
-        <ModeToggle />
-      </nav>
-    </div>
-  );
-}
-
-export function MobileNav() {
+export default function MobileNav() {
   const pathname = usePathname();
   const path1 = pathname.split("/")[1];
 

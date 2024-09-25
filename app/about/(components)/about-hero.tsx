@@ -107,13 +107,13 @@ export default function AboutHero() {
                       </Button>
                     </DialogTrigger>
                     <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle>About Me</DialogTitle>
-                        <DialogDescription>
+                      <DialogHeader className="space-y-4">
+                        <DialogTitle className="text-xl text-primary">About Me</DialogTitle>
+                        <DialogDescription className="leading-relaxed">
                           I Built dynamic, responsive web applications and created seamless user experiences with
                           efficient code.
                         </DialogDescription>
-                        <DialogDescription>
+                        <DialogDescription className="leading-relaxed">
                           Graduated from UIN Jakarta in 2022 then worked at a photocopy shop while learning web
                           programming from scratch including HTML, CSS, Javascript. Joined Eduwork ReactJS/NodeJS
                           bootcamp, focusing on the MERN Stack including libraries and frameworks like Next.js,
