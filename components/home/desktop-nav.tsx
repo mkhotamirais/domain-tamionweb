@@ -48,7 +48,7 @@ export default function DesktopNav() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
                     layoutId="activeHover"
-                    className="-z-10 absolute bg-primary/10 inset-0 inset-y-1 rounded-md"
+                    className="-z-10 absolute bg-primary/25 inset-0 inset-y-1 rounded-md"
                   />
                 )}
               </AnimatePresence>
