@@ -34,7 +34,7 @@ export const projectsList = [
   {
     title: "Next Appwrite",
     href: "https://next-appwrite.vercel.app",
-    isPrimary: true,
+    isPrimary: false,
     description: `Nextjs with database and storage from appwrite, and hosted by vercel`,
     tools: ["next", "appwrite", "react", "tailwind", "typescript", "shadcn", "zustand"],
     imagePath: "/projects/next-appwrite-shoot-1.jpg",
@@ -93,11 +93,12 @@ export const projectsList = [
       // "typescript",
       // "zustand",
     ],
+    imagePath: "/projects/tamimern-shoot-1.jpg",
   },
   {
     title: "PublicApi",
     href: "https://tamipublicapi.vercel.app/",
-    isPrimary: true,
+    isPrimary: false,
     description: `The project retrieves data from a public API called OMDB API and presents it in a grid system. It includes features like searching, filtering, and detailed views for each item, offering a comprehensive and user-friendly interface.`,
     tools: [
       "shadcn",
@@ -116,19 +117,6 @@ export const projectsList = [
       "tailwind",
       "typescript",
     ],
-  },
-  {
-    title: "Sistem Toko",
-    href: "https://tamivite.vercel.app/sisko",
-    isPrimary: false,
-    description: `The project fetches data from a public API called "Sistem Toko" and displays it in a grid system. It includes filtering, searching, sorting, detailed item views, a shopping cart with add/remove options, checkout, and address selection for delivery.`,
-    tools: ["react", "tailwind", "sistem-toko", "react-hot-toast"],
-  },
-  {
-    title: "Static Web",
-    href: "https://tamivite.vercel.app/html-static-web",
-    isPrimary: false,
-    description: `These are some simple static websites that I have followed and learned from various YouTube channels and bootcamps.`,
-    tools: ["html", "css", "javascript"],
+    imagePath: "/projects/tamipublicapi-shoot-1.jpg",
   },
 ];
