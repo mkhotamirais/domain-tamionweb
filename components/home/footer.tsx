@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
           <small className="text-muted-foreground">
             &copy; {new Date().getFullYear()}{" "}
-            <Link href="https://tamionweb.my.id" className="text-primary hover:underline">
+            <Link href="https://tamionweb.my.id" className="hover:underline text-primary">
               Tamionweb
             </Link>
           </small>
