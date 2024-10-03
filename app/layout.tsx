@@ -5,16 +5,20 @@ import Header from "@/components/home/header";
 import Footer from "@/components/home/footer";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { MainClient } from "@/components/main-client";
+import { CustomAuthor } from "./types";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tamionweb",
+  title: {
+    absolute: "Tamionweb - Web Services", // menimpa semua value yang lain
+    default: "Tamionweb", // default untuk page ini dan childnya
+    template: "%s | Tamionweb", // nilai dinamis tergantung childnya
+  },
   description: "Tamionweb is reliable Website Development Services, Customized to Meet Your Specific Needs and Goals.",
   keywords: [
-    "mkhotami rais",
     "m khotami rais",
-    "khotami",
+    "mkhotami tami",
     "tamionweb",
     "tamionweb services",
     "tamionweb development",
@@ -23,7 +27,23 @@ export const metadata: Metadata = {
     "tamionweb website development services",
     "tamionweb website development company",
   ],
-  authors: [{ name: "MKhotami Rais" }],
+  authors: [
+    {
+      name: "Tamionweb",
+      role: "Web Developer",
+      url: "https://tamionweb.my.id",
+      image: "https://tamionweb.my.id/logo.svg",
+      bio: "I Built dynamic, responsive web applications and created seamless user experiences with efficient code.",
+      skills: ["JavaScript", "React", "Next.js", "CSS", "SEO"],
+      socialProfiles: {
+        linkedin: "https://linkedin.com/in/mkhotami-rais/",
+        github: "https://github.com/mkhotamirais",
+      },
+      contact: {
+        email: "tami01.job@gmail.com",
+      },
+    },
+  ] as CustomAuthor[],
   creator: "Mkhotami Rais",
   publisher: "Mkhotami Rais",
 };

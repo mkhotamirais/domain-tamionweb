@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tamionweb.my.id
+
+# Sitemaps
+Sitemap: https://tamionweb.my.id/sitemap.xml

@@ -5,24 +5,7 @@ import AboutHero from "./(components)/about-hero";
 import AboutProjects from "./(components)/about-projects";
 
 export const metadata: Metadata = {
-  title: "About | Tamionweb",
-  description: "Tamionweb is reliable Website Development Services, Customized to Meet Your Specific Needs and Goals.",
-  keywords: [
-    "about tamionweb",
-    "mkhotami rais",
-    "m khotami rais",
-    "khotami",
-    "tamionweb",
-    "tamionweb services",
-    "tamionweb development",
-    "tamionweb website",
-    "tamionweb website development",
-    "tamionweb website development services",
-    "tamionweb website development company",
-  ],
-  authors: [{ name: "MKhotami Rais" }],
-  creator: "Mkhotami Rais",
-  publisher: "Mkhotami Rais",
+  title: "About",
 };
 
 export default function AboutPage() {
