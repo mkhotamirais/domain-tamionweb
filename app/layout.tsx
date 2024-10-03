@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/home/header";
 import Footer from "@/components/home/footer";
-import { ThemeProvider } from "@/components/providers/theme-provider";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 import { MainClient } from "@/components/main-client";
 import { CustomAuthor } from "./types";
 

@@ -1,5 +1,7 @@
 "use client";
 
+import { ModeToggle } from "../theme/mode-toggle";
+import TheoryBtn from "../theory-btn";
 import DesktopNav from "./desktop-nav";
 import { Logo } from "./logo";
 import MobileNav from "./mobile-nav";
@@ -10,8 +12,12 @@ export default function Header() {
       <div className="container">
         <div className="h-16 flex justify-between items-center">
           <Logo />
-          <MobileNav />
-          <DesktopNav />
+          <div className="flex gap-4 items-center">
+            <DesktopNav />
+            <TheoryBtn />
+            <ModeToggle />
+            <MobileNav />
+          </div>
         </div>
       </div>
     </header>

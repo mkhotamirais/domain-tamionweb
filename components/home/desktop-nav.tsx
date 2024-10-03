@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import { ModeToggle } from "../mode-toggle";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function DesktopNav() {
@@ -58,7 +57,6 @@ export default function DesktopNav() {
         <Button asChild variant={"outline"}>
           <Link href="/about#contact">Contact Us</Link>
         </Button>
-        <ModeToggle />
       </nav>
     </div>
   );
