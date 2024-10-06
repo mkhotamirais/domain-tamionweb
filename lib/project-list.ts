@@ -10,7 +10,7 @@ export const projectsList = [
   {
     title: "Hadin Al Musri`",
     href: "https://hadinalmusri.com",
-    isPrimary: true,
+    isPrimary: false,
     description: `Hadinalmusri school website located in Pagaden Subang, containing the school profile and other information.`,
     tools: ["next", "react", "tailwind", "typescript", "shadcn", "zustand"],
     imagePath: "/projects/hadinalmusri-shoot-1.jpg",
@@ -34,7 +34,7 @@ export const projectsList = [
   {
     title: "Next Appwrite",
     href: "https://next-appwrite.vercel.app",
-    isPrimary: false,
+    isPrimary: true,
     description: `Nextjs with database and storage from appwrite, and hosted by vercel`,
     tools: ["next", "appwrite", "react", "tailwind", "typescript", "shadcn", "zustand"],
     imagePath: "/projects/next-appwrite-shoot-1.jpg",
@@ -62,6 +62,15 @@ export const projectsList = [
     description: "Vite buildtool contains components and tips with hosting from vercel.",
     tools: ["html", "css", "javascript", "tailwind", "shadcn", "zustand"],
     imagePath: "/projects/vite-shad-shoot-1.jpg",
+  },
+  {
+    title: "Next Lang",
+    href: "https://next-lang-tami.vercel.app",
+    isPrimary: false,
+    description:
+      "This website is built using Next.js, with dynamic internationalization powered by next-intl, allowing seamless language switching between English, Arabic, and more",
+    tools: ["next", "next-intl", "tailwind", "typescript", "shadcn", "zustand"],
+    imagePath: "/projects/next-lang-shoot-1.jpg",
   },
   {
     title: "MERN",
